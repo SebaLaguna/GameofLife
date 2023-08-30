@@ -1,12 +1,16 @@
 ﻿using System;
 
-namespace PII_Game_Of_Life
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
+        string filePath = "../../assets/board.txt";
+
+        GameOfLife game = new GameOfLife(filePath);
+
+        game.RunGameLoop();
+
+        Console.WriteLine ("Aqui esta su juego, vea procrear a las celulas ");
     }
 }
